@@ -1,0 +1,589 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    stm32f429i_discovery.o(i.STM_EVAL_LEDInit) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery.o(i.STM_EVAL_LEDInit) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery.o(i.STM_EVAL_LEDInit) refers to stm32f429i_discovery.o(.constdata) for GPIO_CLK
+    stm32f429i_discovery.o(i.STM_EVAL_LEDInit) refers to stm32f429i_discovery.o(.data) for GPIO_PORT
+    stm32f429i_discovery.o(i.STM_EVAL_LEDOff) refers to stm32f429i_discovery.o(.constdata) for GPIO_PIN
+    stm32f429i_discovery.o(i.STM_EVAL_LEDOff) refers to stm32f429i_discovery.o(.data) for GPIO_PORT
+    stm32f429i_discovery.o(i.STM_EVAL_LEDOn) refers to stm32f429i_discovery.o(.constdata) for GPIO_PIN
+    stm32f429i_discovery.o(i.STM_EVAL_LEDOn) refers to stm32f429i_discovery.o(.data) for GPIO_PORT
+    stm32f429i_discovery.o(i.STM_EVAL_LEDToggle) refers to stm32f429i_discovery.o(.data) for GPIO_PORT
+    stm32f429i_discovery.o(i.STM_EVAL_LEDToggle) refers to stm32f429i_discovery.o(.constdata) for GPIO_PIN
+    stm32f429i_discovery.o(i.STM_EVAL_PBGetState) refers to stm32f4xx_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit
+    stm32f429i_discovery.o(i.STM_EVAL_PBGetState) refers to stm32f429i_discovery.o(.constdata) for BUTTON_PIN
+    stm32f429i_discovery.o(i.STM_EVAL_PBGetState) refers to stm32f429i_discovery.o(.data) for BUTTON_PORT
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to stm32f4xx_syscfg.o(i.SYSCFG_EXTILineConfig) for SYSCFG_EXTILineConfig
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to stm32f4xx_exti.o(i.EXTI_Init) for EXTI_Init
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to misc.o(i.NVIC_Init) for NVIC_Init
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to stm32f429i_discovery.o(.constdata) for BUTTON_CLK
+    stm32f429i_discovery.o(i.STM_EVAL_PBInit) refers to stm32f429i_discovery.o(.data) for BUTTON_PORT
+    stm32f429i_discovery.o(i.sEE_LowLevel_DMAConfig) refers to stm32f4xx_dma.o(i.DMA_Init) for DMA_Init
+    stm32f429i_discovery.o(i.sEE_LowLevel_DMAConfig) refers to stm32f429i_discovery.o(.bss) for sEEDMA_InitStructure
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to stm32f4xx_i2c.o(i.I2C_Cmd) for I2C_Cmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to stm32f4xx_i2c.o(i.I2C_DeInit) for I2C_DeInit
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to misc.o(i.NVIC_Init) for NVIC_Init
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to stm32f4xx_dma.o(i.DMA_DeInit) for DMA_DeInit
+    stm32f429i_discovery.o(i.sEE_LowLevel_DeInit) refers to stm32f429i_discovery.o(.data) for NVIC_InitStructure
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to misc.o(i.NVIC_Init) for NVIC_Init
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_dma.o(i.DMA_ClearFlag) for DMA_ClearFlag
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_dma.o(i.DMA_DeInit) for DMA_DeInit
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_dma.o(i.DMA_Init) for DMA_Init
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f4xx_dma.o(i.DMA_ITConfig) for DMA_ITConfig
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f429i_discovery.o(.data) for NVIC_InitStructure
+    stm32f429i_discovery.o(i.sEE_LowLevel_Init) refers to stm32f429i_discovery.o(.bss) for sEEDMA_InitStructure
+    stm32f429i_discovery_lcd.o(i.LCD_AF_GPIOConfig) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery_lcd.o(i.LCD_AF_GPIOConfig) refers to stm32f4xx_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    stm32f429i_discovery_lcd.o(i.LCD_AF_GPIOConfig) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery_lcd.o(i.LCD_ChipSelect) refers to stm32f4xx_gpio.o(i.GPIO_ResetBits) for GPIO_ResetBits
+    stm32f429i_discovery_lcd.o(i.LCD_ChipSelect) refers to stm32f4xx_gpio.o(i.GPIO_SetBits) for GPIO_SetBits
+    stm32f429i_discovery_lcd.o(i.LCD_Clear) refers to stm32f429i_discovery_lcd.o(.data) for CurrentFrameBuffer
+    stm32f429i_discovery_lcd.o(i.LCD_ClearLine) refers to stm32f429i_discovery_lcd.o(i.LCD_DisplayChar) for LCD_DisplayChar
+    stm32f429i_discovery_lcd.o(i.LCD_ClearLine) refers to stm32f429i_discovery_lcd.o(.data) for LCD_Currentfonts
+    stm32f429i_discovery_lcd.o(i.LCD_ClosedPolyLine) refers to stm32f429i_discovery_lcd.o(i.LCD_PolyLine) for LCD_PolyLine
+    stm32f429i_discovery_lcd.o(i.LCD_ClosedPolyLine) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawUniLine) for LCD_DrawUniLine
+    stm32f429i_discovery_lcd.o(i.LCD_ClosedPolyLineRelative) refers to stm32f429i_discovery_lcd.o(i.LCD_PolyLineRelativeClosed) for LCD_PolyLineRelativeClosed
+    stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesConfig) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesConfig) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesConfig) refers to stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesWrite) for LCD_CtrlLinesWrite
+    stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesWrite) refers to stm32f4xx_gpio.o(i.GPIO_WriteBit) for GPIO_WriteBit
+    stm32f429i_discovery_lcd.o(i.LCD_DeInit) refers to stm32f429i_discovery_lcd.o(i.LCD_DisplayOff) for LCD_DisplayOff
+    stm32f429i_discovery_lcd.o(i.LCD_DeInit) refers to stm32f4xx_spi.o(i.SPI_Cmd) for SPI_Cmd
+    stm32f429i_discovery_lcd.o(i.LCD_DeInit) refers to stm32f4xx_spi.o(i.SPI_I2S_DeInit) for SPI_I2S_DeInit
+    stm32f429i_discovery_lcd.o(i.LCD_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    stm32f429i_discovery_lcd.o(i.LCD_DeInit) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery_lcd.o(i.LCD_DeInit) refers to stm32f4xx_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    stm32f429i_discovery_lcd.o(i.LCD_DisplayChar) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawChar) for LCD_DrawChar
+    stm32f429i_discovery_lcd.o(i.LCD_DisplayChar) refers to stm32f429i_discovery_lcd.o(.data) for LCD_Currentfonts
+    stm32f429i_discovery_lcd.o(i.LCD_DisplayOff) refers to stm32f429i_discovery_lcd.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    stm32f429i_discovery_lcd.o(i.LCD_DisplayOn) refers to stm32f429i_discovery_lcd.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    stm32f429i_discovery_lcd.o(i.LCD_DisplayStringLine) refers to stm32f429i_discovery_lcd.o(i.LCD_DisplayChar) for LCD_DisplayChar
+    stm32f429i_discovery_lcd.o(i.LCD_DisplayStringLine) refers to stm32f429i_discovery_lcd.o(.data) for LCD_Currentfonts
+    stm32f429i_discovery_lcd.o(i.LCD_DrawChar) refers to stm32f429i_discovery_lcd.o(.data) for LCD_Currentfonts
+    stm32f429i_discovery_lcd.o(i.LCD_DrawCircle) refers to stm32f429i_discovery_lcd.o(.data) for CurrentTextColor
+    stm32f429i_discovery_lcd.o(i.LCD_DrawEllipse) refers to stm32f429i_discovery_lcd.o(.data) for CurrentFrameBuffer
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullCircle) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawLine) for LCD_DrawLine
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullCircle) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawCircle) for LCD_DrawCircle
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullEllipse) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawLine) for LCD_DrawLine
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullRect) refers to stm32f4xx_dma2d.o(i.DMA2D_DeInit) for DMA2D_DeInit
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullRect) refers to stm32f4xx_dma2d.o(i.DMA2D_Init) for DMA2D_Init
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullRect) refers to stm32f4xx_dma2d.o(i.DMA2D_StartTransfer) for DMA2D_StartTransfer
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullRect) refers to stm32f4xx_dma2d.o(i.DMA2D_GetFlagStatus) for DMA2D_GetFlagStatus
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullRect) refers to stm32f429i_discovery_lcd.o(i.LCD_SetTextColor) for LCD_SetTextColor
+    stm32f429i_discovery_lcd.o(i.LCD_DrawFullRect) refers to stm32f429i_discovery_lcd.o(.data) for CurrentTextColor
+    stm32f429i_discovery_lcd.o(i.LCD_DrawLine) refers to stm32f4xx_dma2d.o(i.DMA2D_DeInit) for DMA2D_DeInit
+    stm32f429i_discovery_lcd.o(i.LCD_DrawLine) refers to stm32f4xx_dma2d.o(i.DMA2D_Init) for DMA2D_Init
+    stm32f429i_discovery_lcd.o(i.LCD_DrawLine) refers to stm32f4xx_dma2d.o(i.DMA2D_StartTransfer) for DMA2D_StartTransfer
+    stm32f429i_discovery_lcd.o(i.LCD_DrawLine) refers to stm32f4xx_dma2d.o(i.DMA2D_GetFlagStatus) for DMA2D_GetFlagStatus
+    stm32f429i_discovery_lcd.o(i.LCD_DrawLine) refers to stm32f429i_discovery_lcd.o(.data) for CurrentFrameBuffer
+    stm32f429i_discovery_lcd.o(i.LCD_DrawMonoPict) refers to stm32f429i_discovery_lcd.o(.data) for CurrentBackColor
+    stm32f429i_discovery_lcd.o(i.LCD_DrawRect) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawLine) for LCD_DrawLine
+    stm32f429i_discovery_lcd.o(i.LCD_DrawUniLine) refers to stm32f429i_discovery_lcd.o(i.PutPixel) for PutPixel
+    stm32f429i_discovery_lcd.o(i.LCD_FillPolyLine) refers to stm32f429i_discovery_lcd.o(i.LCD_FillTriangle) for LCD_FillTriangle
+    stm32f429i_discovery_lcd.o(i.LCD_FillTriangle) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawUniLine) for LCD_DrawUniLine
+    stm32f429i_discovery_lcd.o(i.LCD_GetColors) refers to stm32f429i_discovery_lcd.o(.data) for CurrentTextColor
+    stm32f429i_discovery_lcd.o(i.LCD_GetFont) refers to stm32f429i_discovery_lcd.o(.data) for LCD_Currentfonts
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesConfig) for LCD_CtrlLinesConfig
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f429i_discovery_lcd.o(i.LCD_ChipSelect) for LCD_ChipSelect
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) for LCD_SPIConfig
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f429i_discovery_lcd.o(i.LCD_PowerOn) for LCD_PowerOn
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f429i_discovery_lcd.o(i.LCD_AF_GPIOConfig) for LCD_AF_GPIOConfig
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f429i_discovery_sdram.o(i.SDRAM_Init) for SDRAM_Init
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f4xx_rcc.o(i.RCC_PLLSAIConfig) for RCC_PLLSAIConfig
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f4xx_rcc.o(i.RCC_LTDCCLKDivConfig) for RCC_LTDCCLKDivConfig
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f4xx_rcc.o(i.RCC_PLLSAICmd) for RCC_PLLSAICmd
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f4xx_rcc.o(i.RCC_GetFlagStatus) for RCC_GetFlagStatus
+    stm32f429i_discovery_lcd.o(i.LCD_Init) refers to stm32f4xx_ltdc.o(i.LTDC_Init) for LTDC_Init
+    stm32f429i_discovery_lcd.o(i.LCD_LayerInit) refers to stm32f4xx_ltdc.o(i.LTDC_LayerInit) for LTDC_LayerInit
+    stm32f429i_discovery_lcd.o(i.LCD_LayerInit) refers to stm32f4xx_ltdc.o(i.LTDC_ReloadConfig) for LTDC_ReloadConfig
+    stm32f429i_discovery_lcd.o(i.LCD_LayerInit) refers to stm32f4xx_ltdc.o(i.LTDC_LayerCmd) for LTDC_LayerCmd
+    stm32f429i_discovery_lcd.o(i.LCD_LayerInit) refers to stm32f429i_discovery_lcd.o(i.LCD_SetFont) for LCD_SetFont
+    stm32f429i_discovery_lcd.o(i.LCD_LayerInit) refers to stm32f4xx_ltdc.o(i.LTDC_DitherCmd) for LTDC_DitherCmd
+    stm32f429i_discovery_lcd.o(i.LCD_LayerInit) refers to stm32f429i_discovery_lcd.o(.data) for Font16x24
+    stm32f429i_discovery_lcd.o(i.LCD_PolyLine) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawUniLine) for LCD_DrawUniLine
+    stm32f429i_discovery_lcd.o(i.LCD_PolyLineRelative) refers to stm32f429i_discovery_lcd.o(i.LCD_PolyLineRelativeClosed) for LCD_PolyLineRelativeClosed
+    stm32f429i_discovery_lcd.o(i.LCD_PolyLineRelativeClosed) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawUniLine) for LCD_DrawUniLine
+    stm32f429i_discovery_lcd.o(i.LCD_PowerOn) refers to stm32f429i_discovery_lcd.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    stm32f429i_discovery_lcd.o(i.LCD_PowerOn) refers to stm32f429i_discovery_lcd.o(i.LCD_WriteData) for LCD_WriteData
+    stm32f429i_discovery_lcd.o(i.LCD_PowerOn) refers to stm32f429i_discovery_lcd.o(i.delay) for delay
+    stm32f429i_discovery_lcd.o(i.LCD_ReSetColorKeying) refers to stm32f4xx_ltdc.o(i.LTDC_ColorKeyingConfig) for LTDC_ColorKeyingConfig
+    stm32f429i_discovery_lcd.o(i.LCD_ReSetColorKeying) refers to stm32f4xx_ltdc.o(i.LTDC_ReloadConfig) for LTDC_ReloadConfig
+    stm32f429i_discovery_lcd.o(i.LCD_ReSetColorKeying) refers to stm32f429i_discovery_lcd.o(.data) for CurrentLayer
+    stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) refers to stm32f4xx_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) refers to stm32f4xx_spi.o(i.SPI_I2S_DeInit) for SPI_I2S_DeInit
+    stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) refers to stm32f4xx_spi.o(i.SPI_Init) for SPI_Init
+    stm32f429i_discovery_lcd.o(i.LCD_SPIConfig) refers to stm32f4xx_spi.o(i.SPI_Cmd) for SPI_Cmd
+    stm32f429i_discovery_lcd.o(i.LCD_SetBackColor) refers to stm32f429i_discovery_lcd.o(.data) for CurrentBackColor
+    stm32f429i_discovery_lcd.o(i.LCD_SetColorKeying) refers to stm32f4xx_ltdc.o(i.LTDC_ColorKeyingConfig) for LTDC_ColorKeyingConfig
+    stm32f429i_discovery_lcd.o(i.LCD_SetColorKeying) refers to stm32f4xx_ltdc.o(i.LTDC_ReloadConfig) for LTDC_ReloadConfig
+    stm32f429i_discovery_lcd.o(i.LCD_SetColorKeying) refers to stm32f429i_discovery_lcd.o(.data) for CurrentLayer
+    stm32f429i_discovery_lcd.o(i.LCD_SetColors) refers to stm32f429i_discovery_lcd.o(.data) for CurrentTextColor
+    stm32f429i_discovery_lcd.o(i.LCD_SetCursor) refers to stm32f429i_discovery_lcd.o(.data) for CurrentFrameBuffer
+    stm32f429i_discovery_lcd.o(i.LCD_SetDisplayWindow) refers to stm32f4xx_ltdc.o(i.LTDC_LayerPosition) for LTDC_LayerPosition
+    stm32f429i_discovery_lcd.o(i.LCD_SetDisplayWindow) refers to stm32f4xx_ltdc.o(i.LTDC_ReloadConfig) for LTDC_ReloadConfig
+    stm32f429i_discovery_lcd.o(i.LCD_SetDisplayWindow) refers to stm32f4xx_ltdc.o(i.LTDC_LayerSize) for LTDC_LayerSize
+    stm32f429i_discovery_lcd.o(i.LCD_SetDisplayWindow) refers to stm32f429i_discovery_lcd.o(.data) for CurrentLayer
+    stm32f429i_discovery_lcd.o(i.LCD_SetFont) refers to stm32f429i_discovery_lcd.o(.data) for LCD_Currentfonts
+    stm32f429i_discovery_lcd.o(i.LCD_SetLayer) refers to stm32f429i_discovery_lcd.o(.data) for CurrentFrameBuffer
+    stm32f429i_discovery_lcd.o(i.LCD_SetTextColor) refers to stm32f429i_discovery_lcd.o(.data) for CurrentTextColor
+    stm32f429i_discovery_lcd.o(i.LCD_SetTransparency) refers to stm32f4xx_ltdc.o(i.LTDC_LayerAlpha) for LTDC_LayerAlpha
+    stm32f429i_discovery_lcd.o(i.LCD_SetTransparency) refers to stm32f4xx_ltdc.o(i.LTDC_ReloadConfig) for LTDC_ReloadConfig
+    stm32f429i_discovery_lcd.o(i.LCD_SetTransparency) refers to stm32f429i_discovery_lcd.o(.data) for CurrentLayer
+    stm32f429i_discovery_lcd.o(i.LCD_Triangle) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawUniLine) for LCD_DrawUniLine
+    stm32f429i_discovery_lcd.o(i.LCD_WindowModeDisable) refers to stm32f429i_discovery_lcd.o(i.LCD_SetDisplayWindow) for LCD_SetDisplayWindow
+    stm32f429i_discovery_lcd.o(i.LCD_WriteBMP) refers to stm32f4xx_ltdc.o(i.LTDC_LayerSize) for LTDC_LayerSize
+    stm32f429i_discovery_lcd.o(i.LCD_WriteBMP) refers to stm32f4xx_ltdc.o(i.LTDC_ReloadConfig) for LTDC_ReloadConfig
+    stm32f429i_discovery_lcd.o(i.LCD_WriteBMP) refers to stm32f4xx_ltdc.o(i.LTDC_LayerPixelFormat) for LTDC_LayerPixelFormat
+    stm32f429i_discovery_lcd.o(i.LCD_WriteBMP) refers to stm32f429i_discovery_lcd.o(.data) for CurrentFrameBuffer
+    stm32f429i_discovery_lcd.o(i.LCD_WriteCommand) refers to stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesWrite) for LCD_CtrlLinesWrite
+    stm32f429i_discovery_lcd.o(i.LCD_WriteCommand) refers to stm32f429i_discovery_lcd.o(i.LCD_ChipSelect) for LCD_ChipSelect
+    stm32f429i_discovery_lcd.o(i.LCD_WriteCommand) refers to stm32f4xx_spi.o(i.SPI_I2S_SendData) for SPI_I2S_SendData
+    stm32f429i_discovery_lcd.o(i.LCD_WriteCommand) refers to stm32f4xx_spi.o(i.SPI_I2S_GetFlagStatus) for SPI_I2S_GetFlagStatus
+    stm32f429i_discovery_lcd.o(i.LCD_WriteData) refers to stm32f429i_discovery_lcd.o(i.LCD_CtrlLinesWrite) for LCD_CtrlLinesWrite
+    stm32f429i_discovery_lcd.o(i.LCD_WriteData) refers to stm32f429i_discovery_lcd.o(i.LCD_ChipSelect) for LCD_ChipSelect
+    stm32f429i_discovery_lcd.o(i.LCD_WriteData) refers to stm32f4xx_spi.o(i.SPI_I2S_SendData) for SPI_I2S_SendData
+    stm32f429i_discovery_lcd.o(i.LCD_WriteData) refers to stm32f4xx_spi.o(i.SPI_I2S_GetFlagStatus) for SPI_I2S_GetFlagStatus
+    stm32f429i_discovery_lcd.o(i.PutPixel) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawLine) for LCD_DrawLine
+    stm32f429i_discovery_lcd.o(.data) refers to stm32f429i_discovery_lcd.o(.constdata) for ASCII16x24_Table
+    stm32f429i_discovery_sdram.o(i.SDRAM_GPIOConfig) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery_sdram.o(i.SDRAM_GPIOConfig) refers to stm32f4xx_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    stm32f429i_discovery_sdram.o(i.SDRAM_GPIOConfig) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery_sdram.o(i.SDRAM_Init) refers to stm32f429i_discovery_sdram.o(i.SDRAM_GPIOConfig) for SDRAM_GPIOConfig
+    stm32f429i_discovery_sdram.o(i.SDRAM_Init) refers to stm32f4xx_rcc.o(i.RCC_AHB3PeriphClockCmd) for RCC_AHB3PeriphClockCmd
+    stm32f429i_discovery_sdram.o(i.SDRAM_Init) refers to stm32f4xx_fmc.o(i.FMC_SDRAMInit) for FMC_SDRAMInit
+    stm32f429i_discovery_sdram.o(i.SDRAM_Init) refers to stm32f429i_discovery_sdram.o(i.SDRAM_InitSequence) for SDRAM_InitSequence
+    stm32f429i_discovery_sdram.o(i.SDRAM_InitSequence) refers to stm32f4xx_fmc.o(i.FMC_GetFlagStatus) for FMC_GetFlagStatus
+    stm32f429i_discovery_sdram.o(i.SDRAM_InitSequence) refers to stm32f4xx_fmc.o(i.FMC_SDRAMCmdConfig) for FMC_SDRAMCmdConfig
+    stm32f429i_discovery_sdram.o(i.SDRAM_InitSequence) refers to stm32f429i_discovery_sdram.o(i.delay) for delay
+    stm32f429i_discovery_sdram.o(i.SDRAM_InitSequence) refers to stm32f4xx_fmc.o(i.FMC_SetRefreshCount) for FMC_SetRefreshCount
+    stm32f429i_discovery_sdram.o(i.SDRAM_ReadBuffer) refers to stm32f4xx_fmc.o(i.FMC_GetFlagStatus) for FMC_GetFlagStatus
+    stm32f429i_discovery_sdram.o(i.SDRAM_WriteBuffer) refers to stm32f4xx_fmc.o(i.FMC_SDRAMWriteProtectionConfig) for FMC_SDRAMWriteProtectionConfig
+    stm32f429i_discovery_sdram.o(i.SDRAM_WriteBuffer) refers to stm32f4xx_fmc.o(i.FMC_GetFlagStatus) for FMC_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f429i_discovery_ioe.o(i.IOE_DMA_Config) for IOE_DMA_Config
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_DMALastTransferCmd) for I2C_DMALastTransferCmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) for IOE_TimeoutUserCallback
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_CheckEvent) for I2C_CheckEvent
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_SendData) for I2C_SendData
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_DMACmd) for I2C_DMACmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_dma.o(i.DMA_GetFlagStatus) for DMA_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f4xx_dma.o(i.DMA_ClearFlag) for DMA_ClearFlag
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDataBuffer) refers to stm32f429i_discovery_ioe.o(.data) for IOE_TimeOut
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f429i_discovery_ioe.o(i.IOE_DMA_Config) for IOE_DMA_Config
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_DMALastTransferCmd) for I2C_DMALastTransferCmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) for IOE_TimeoutUserCallback
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_CheckEvent) for I2C_CheckEvent
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_SendData) for I2C_SendData
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_DMACmd) for I2C_DMACmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_dma.o(i.DMA_GetFlagStatus) for DMA_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f4xx_dma.o(i.DMA_ClearFlag) for DMA_ClearFlag
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_ReadDeviceRegister) refers to stm32f429i_discovery_ioe.o(.data) for IOE_TimeOut
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f429i_discovery_ioe.o(i.IOE_DMA_Config) for IOE_DMA_Config
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) for IOE_TimeoutUserCallback
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_CheckEvent) for I2C_CheckEvent
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_SendData) for I2C_SendData
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_DMACmd) for I2C_DMACmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_dma.o(i.DMA_GetFlagStatus) for DMA_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f4xx_dma.o(i.DMA_ClearFlag) for DMA_ClearFlag
+    stm32f429i_discovery_ioe.o(i.I2C_DMA_WriteDeviceRegister) refers to stm32f429i_discovery_ioe.o(.data) for IOE_TimeOut
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) for IOE_TimeoutUserCallback
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_SendData) for I2C_SendData
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_AcknowledgeConfig) for I2C_AcknowledgeConfig
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_NACKPositionConfig) for I2C_NACKPositionConfig
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f4xx_i2c.o(i.I2C_ReceiveData) for I2C_ReceiveData
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) refers to stm32f429i_discovery_ioe.o(.data) for IOE_TimeOut
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) for IOE_TimeoutUserCallback
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_AcknowledgeConfig) for I2C_AcknowledgeConfig
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_SendData) for I2C_SendData
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_ReceiveData) for I2C_ReceiveData
+    stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) refers to stm32f429i_discovery_ioe.o(.data) for IOE_TimeOut
+    stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) refers to stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) for IOE_TimeoutUserCallback
+    stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_SendData) for I2C_SendData
+    stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) refers to stm32f429i_discovery_ioe.o(.data) for IOE_TimeOut
+    stm32f429i_discovery_ioe.o(i.IOE_ClearGITPending) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) for IOE_GPIO_Config
+    stm32f429i_discovery_ioe.o(i.IOE_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_I2C_Config) for IOE_I2C_Config
+    stm32f429i_discovery_ioe.o(i.IOE_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_IsOperational) for IOE_IsOperational
+    stm32f429i_discovery_ioe.o(i.IOE_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_Reset) for IOE_Reset
+    stm32f429i_discovery_ioe.o(i.IOE_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_FnctCmd) for IOE_FnctCmd
+    stm32f429i_discovery_ioe.o(i.IOE_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_TP_Config) for IOE_TP_Config
+    stm32f429i_discovery_ioe.o(i.IOE_DMA_Config) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery_ioe.o(i.IOE_DMA_Config) refers to stm32f4xx_dma.o(i.DMA_DeInit) for DMA_DeInit
+    stm32f429i_discovery_ioe.o(i.IOE_DMA_Config) refers to stm32f4xx_dma.o(i.DMA_Init) for DMA_Init
+    stm32f429i_discovery_ioe.o(i.IOE_FnctCmd) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_FnctCmd) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_GITCmd) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_GITCmd) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_GITConfig) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_GITConfig) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) refers to stm32f4xx_gpio.o(i.GPIO_PinAFConfig) for GPIO_PinAFConfig
+    stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    stm32f429i_discovery_ioe.o(i.IOE_GetGITStatus) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_I2C_Config) refers to stm32f4xx_i2c.o(i.I2C_Init) for I2C_Init
+    stm32f429i_discovery_ioe.o(i.IOE_I2C_Config) refers to stm32f4xx_i2c.o(i.I2C_Cmd) for I2C_Cmd
+    stm32f429i_discovery_ioe.o(i.IOE_IOAFConfig) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_IOAFConfig) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_IsOperational) refers to stm32f429i_discovery_ioe.o(i.IOE_ReadID) for IOE_ReadID
+    stm32f429i_discovery_ioe.o(i.IOE_IsOperational) refers to stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) for IOE_TimeoutUserCallback
+    stm32f429i_discovery_ioe.o(i.IOE_IsOperational) refers to stm32f429i_discovery_ioe.o(.data) for IOE_TimeOut
+    stm32f429i_discovery_ioe.o(i.IOE_ReadID) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_Reset) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_Reset) refers to stm32f429i_discovery_ioe.o(i.delay) for delay
+    stm32f429i_discovery_ioe.o(i.IOE_TPITConfig) refers to stm32f429i_discovery_ioe.o(i.IOE_GITCmd) for IOE_GITCmd
+    stm32f429i_discovery_ioe.o(i.IOE_TPITConfig) refers to stm32f429i_discovery_ioe.o(i.IOE_GITConfig) for IOE_GITConfig
+    stm32f429i_discovery_ioe.o(i.IOE_TPITConfig) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_FnctCmd) for IOE_FnctCmd
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Config) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Config) refers to stm32f429i_discovery_ioe.o(i.delay) for delay
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Config) refers to stm32f429i_discovery_ioe.o(i.IOE_IOAFConfig) for IOE_IOAFConfig
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Config) refers to stm32f429i_discovery_ioe.o(.data) for TP_State
+    stm32f429i_discovery_ioe.o(i.IOE_TP_GetState) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDeviceRegister) for I2C_ReadDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_TP_GetState) refers to stm32f429i_discovery_ioe.o(i.IOE_TP_Read_X) for IOE_TP_Read_X
+    stm32f429i_discovery_ioe.o(i.IOE_TP_GetState) refers to stm32f429i_discovery_ioe.o(i.IOE_TP_Read_Y) for IOE_TP_Read_Y
+    stm32f429i_discovery_ioe.o(i.IOE_TP_GetState) refers to stm32f429i_discovery_ioe.o(i.IOE_TP_Read_Z) for IOE_TP_Read_Z
+    stm32f429i_discovery_ioe.o(i.IOE_TP_GetState) refers to stm32f429i_discovery_ioe.o(i.I2C_WriteDeviceRegister) for I2C_WriteDeviceRegister
+    stm32f429i_discovery_ioe.o(i.IOE_TP_GetState) refers to stm32f429i_discovery_ioe.o(.data) for TP_State
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Read_X) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) for I2C_ReadDataBuffer
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Read_Y) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) for I2C_ReadDataBuffer
+    stm32f429i_discovery_ioe.o(i.IOE_TP_Read_Z) refers to stm32f429i_discovery_ioe.o(i.I2C_ReadDataBuffer) for I2C_ReadDataBuffer
+    stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) refers to stm32f4xx_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) refers to stm32f4xx_i2c.o(i.I2C_SoftwareResetCmd) for I2C_SoftwareResetCmd
+    stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) refers to stm32f429i_discovery_ioe.o(i.IOE_GPIO_Config) for IOE_GPIO_Config
+    stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) refers to stm32f4xx_i2c.o(i.I2C_DeInit) for I2C_DeInit
+    stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) refers to stm32f4xx_i2c.o(i.I2C_Cmd) for I2C_Cmd
+    stm32f429i_discovery_ioe.o(i.IOE_TimeoutUserCallback) refers to stm32f4xx_i2c.o(i.I2C_Init) for I2C_Init
+    stm32f4xx_adc.o(i.ADC_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_can.o(i.CAN_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f4xx_can.o(i.CAN_GetITStatus) refers to stm32f4xx_can.o(i.CheckITStatus) for CheckITStatus
+    stm32f4xx_dac.o(i.DAC_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f4xx_dma2d.o(i.DMA2D_DeInit) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphResetCmd) for RCC_AHB1PeriphResetCmd
+    stm32f4xx_flash.o(i.FLASH_EraseAllBank1Sectors) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_EraseAllBank2Sectors) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_EraseAllSectors) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_EraseSector) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_OB_Launch) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_OB_PCROP1Config) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_OB_PCROPConfig) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_OB_RDPConfig) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_OB_UserConfig) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_OB_WRP1Config) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_OB_WRPConfig) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_ProgramByte) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_ProgramDoubleWord) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_ProgramHalfWord) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_ProgramWord) refers to stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32f4xx_flash.o(i.FLASH_WaitForLastOperation) refers to stm32f4xx_flash.o(i.FLASH_GetStatus) for FLASH_GetStatus
+    stm32f4xx_fmc.o(i.FMC_NORSRAMStructInit) refers to stm32f4xx_fmc.o(.constdata) for FMC_DefaultTimingStruct
+    stm32f4xx_gpio.o(i.GPIO_DeInit) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphResetCmd) for RCC_AHB1PeriphResetCmd
+    stm32f4xx_hash.o(i.HASH_DeInit) refers to stm32f4xx_rcc.o(i.RCC_AHB2PeriphResetCmd) for RCC_AHB2PeriphResetCmd
+    stm32f4xx_hash_md5.o(i.HASH_MD5) refers to stm32f4xx_hash.o(i.HASH_DeInit) for HASH_DeInit
+    stm32f4xx_hash_md5.o(i.HASH_MD5) refers to stm32f4xx_hash.o(i.HASH_Init) for HASH_Init
+    stm32f4xx_hash_md5.o(i.HASH_MD5) refers to stm32f4xx_hash.o(i.HASH_SetLastWordValidBitsNbr) for HASH_SetLastWordValidBitsNbr
+    stm32f4xx_hash_md5.o(i.HASH_MD5) refers to stm32f4xx_hash.o(i.HASH_DataIn) for HASH_DataIn
+    stm32f4xx_hash_md5.o(i.HASH_MD5) refers to stm32f4xx_hash.o(i.HASH_StartDigest) for HASH_StartDigest
+    stm32f4xx_hash_md5.o(i.HASH_MD5) refers to stm32f4xx_hash.o(i.HASH_GetFlagStatus) for HASH_GetFlagStatus
+    stm32f4xx_hash_md5.o(i.HASH_MD5) refers to stm32f4xx_hash.o(i.HASH_GetDigest) for HASH_GetDigest
+    stm32f4xx_hash_md5.o(i.HMAC_MD5) refers to stm32f4xx_hash.o(i.HASH_DeInit) for HASH_DeInit
+    stm32f4xx_hash_md5.o(i.HMAC_MD5) refers to stm32f4xx_hash.o(i.HASH_Init) for HASH_Init
+    stm32f4xx_hash_md5.o(i.HMAC_MD5) refers to stm32f4xx_hash.o(i.HASH_SetLastWordValidBitsNbr) for HASH_SetLastWordValidBitsNbr
+    stm32f4xx_hash_md5.o(i.HMAC_MD5) refers to stm32f4xx_hash.o(i.HASH_DataIn) for HASH_DataIn
+    stm32f4xx_hash_md5.o(i.HMAC_MD5) refers to stm32f4xx_hash.o(i.HASH_StartDigest) for HASH_StartDigest
+    stm32f4xx_hash_md5.o(i.HMAC_MD5) refers to stm32f4xx_hash.o(i.HASH_GetFlagStatus) for HASH_GetFlagStatus
+    stm32f4xx_hash_md5.o(i.HMAC_MD5) refers to stm32f4xx_hash.o(i.HASH_GetDigest) for HASH_GetDigest
+    stm32f4xx_hash_sha1.o(i.HASH_SHA1) refers to stm32f4xx_hash.o(i.HASH_DeInit) for HASH_DeInit
+    stm32f4xx_hash_sha1.o(i.HASH_SHA1) refers to stm32f4xx_hash.o(i.HASH_Init) for HASH_Init
+    stm32f4xx_hash_sha1.o(i.HASH_SHA1) refers to stm32f4xx_hash.o(i.HASH_SetLastWordValidBitsNbr) for HASH_SetLastWordValidBitsNbr
+    stm32f4xx_hash_sha1.o(i.HASH_SHA1) refers to stm32f4xx_hash.o(i.HASH_DataIn) for HASH_DataIn
+    stm32f4xx_hash_sha1.o(i.HASH_SHA1) refers to stm32f4xx_hash.o(i.HASH_StartDigest) for HASH_StartDigest
+    stm32f4xx_hash_sha1.o(i.HASH_SHA1) refers to stm32f4xx_hash.o(i.HASH_GetFlagStatus) for HASH_GetFlagStatus
+    stm32f4xx_hash_sha1.o(i.HASH_SHA1) refers to stm32f4xx_hash.o(i.HASH_GetDigest) for HASH_GetDigest
+    stm32f4xx_hash_sha1.o(i.HMAC_SHA1) refers to stm32f4xx_hash.o(i.HASH_DeInit) for HASH_DeInit
+    stm32f4xx_hash_sha1.o(i.HMAC_SHA1) refers to stm32f4xx_hash.o(i.HASH_Init) for HASH_Init
+    stm32f4xx_hash_sha1.o(i.HMAC_SHA1) refers to stm32f4xx_hash.o(i.HASH_SetLastWordValidBitsNbr) for HASH_SetLastWordValidBitsNbr
+    stm32f4xx_hash_sha1.o(i.HMAC_SHA1) refers to stm32f4xx_hash.o(i.HASH_DataIn) for HASH_DataIn
+    stm32f4xx_hash_sha1.o(i.HMAC_SHA1) refers to stm32f4xx_hash.o(i.HASH_StartDigest) for HASH_StartDigest
+    stm32f4xx_hash_sha1.o(i.HMAC_SHA1) refers to stm32f4xx_hash.o(i.HASH_GetFlagStatus) for HASH_GetFlagStatus
+    stm32f4xx_hash_sha1.o(i.HMAC_SHA1) refers to stm32f4xx_hash.o(i.HASH_GetDigest) for HASH_GetDigest
+    stm32f4xx_i2c.o(i.I2C_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f4xx_i2c.o(i.I2C_Init) refers to stm32f4xx_rcc.o(i.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    stm32f4xx_ltdc.o(i.LTDC_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_pwr.o(i.PWR_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f4xx_rcc.o(i.RCC_GetClocksFreq) refers to stm32f4xx_rcc.o(.data) for APBAHBPrescTable
+    stm32f4xx_rcc.o(i.RCC_WaitForHSEStartUp) refers to stm32f4xx_rcc.o(i.RCC_GetFlagStatus) for RCC_GetFlagStatus
+    stm32f4xx_rng.o(i.RNG_DeInit) refers to stm32f4xx_rcc.o(i.RCC_AHB2PeriphResetCmd) for RCC_AHB2PeriphResetCmd
+    stm32f4xx_rtc.o(i.RTC_CoarseCalibCmd) refers to stm32f4xx_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f4xx_rtc.o(i.RTC_CoarseCalibCmd) refers to stm32f4xx_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f4xx_rtc.o(i.RTC_CoarseCalibConfig) refers to stm32f4xx_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f4xx_rtc.o(i.RTC_CoarseCalibConfig) refers to stm32f4xx_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f4xx_rtc.o(i.RTC_DeInit) refers to stm32f4xx_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f4xx_rtc.o(i.RTC_DeInit) refers to stm32f4xx_rtc.o(i.RTC_WaitForSynchro) for RTC_WaitForSynchro
+    stm32f4xx_rtc.o(i.RTC_GetAlarm) refers to stm32f4xx_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f4xx_rtc.o(i.RTC_GetDate) refers to stm32f4xx_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f4xx_rtc.o(i.RTC_GetTime) refers to stm32f4xx_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f4xx_rtc.o(i.RTC_GetTimeStamp) refers to stm32f4xx_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f4xx_rtc.o(i.RTC_Init) refers to stm32f4xx_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f4xx_rtc.o(i.RTC_Init) refers to stm32f4xx_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f4xx_rtc.o(i.RTC_RefClockCmd) refers to stm32f4xx_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f4xx_rtc.o(i.RTC_RefClockCmd) refers to stm32f4xx_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f4xx_rtc.o(i.RTC_SetAlarm) refers to stm32f4xx_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f4xx_rtc.o(i.RTC_SetAlarm) refers to stm32f4xx_rtc.o(i.RTC_ByteToBcd2) for RTC_ByteToBcd2
+    stm32f4xx_rtc.o(i.RTC_SetDate) refers to stm32f4xx_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f4xx_rtc.o(i.RTC_SetDate) refers to stm32f4xx_rtc.o(i.RTC_ByteToBcd2) for RTC_ByteToBcd2
+    stm32f4xx_rtc.o(i.RTC_SetDate) refers to stm32f4xx_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f4xx_rtc.o(i.RTC_SetDate) refers to stm32f4xx_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f4xx_rtc.o(i.RTC_SetDate) refers to stm32f4xx_rtc.o(i.RTC_WaitForSynchro) for RTC_WaitForSynchro
+    stm32f4xx_rtc.o(i.RTC_SetTime) refers to stm32f4xx_rtc.o(i.RTC_Bcd2ToByte) for RTC_Bcd2ToByte
+    stm32f4xx_rtc.o(i.RTC_SetTime) refers to stm32f4xx_rtc.o(i.RTC_ByteToBcd2) for RTC_ByteToBcd2
+    stm32f4xx_rtc.o(i.RTC_SetTime) refers to stm32f4xx_rtc.o(i.RTC_EnterInitMode) for RTC_EnterInitMode
+    stm32f4xx_rtc.o(i.RTC_SetTime) refers to stm32f4xx_rtc.o(i.RTC_ExitInitMode) for RTC_ExitInitMode
+    stm32f4xx_rtc.o(i.RTC_SetTime) refers to stm32f4xx_rtc.o(i.RTC_WaitForSynchro) for RTC_WaitForSynchro
+    stm32f4xx_rtc.o(i.RTC_SynchroShiftConfig) refers to stm32f4xx_rtc.o(i.RTC_WaitForSynchro) for RTC_WaitForSynchro
+    stm32f4xx_sai.o(i.SAI_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_sdio.o(i.SDIO_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_spi.o(i.SPI_I2S_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_spi.o(i.SPI_I2S_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f4xx_syscfg.o(i.SYSCFG_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_tim.o(i.TIM_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_tim.o(i.TIM_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f4xx_tim.o(i.TIM_ETRClockMode1Config) refers to stm32f4xx_tim.o(i.TIM_ETRConfig) for TIM_ETRConfig
+    stm32f4xx_tim.o(i.TIM_ETRClockMode2Config) refers to stm32f4xx_tim.o(i.TIM_ETRConfig) for TIM_ETRConfig
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TI1_Config) for TI1_Config
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TIM_SetIC1Prescaler) for TIM_SetIC1Prescaler
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TI2_Config) for TI2_Config
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TIM_SetIC2Prescaler) for TIM_SetIC2Prescaler
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TI3_Config) for TI3_Config
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TIM_SetIC3Prescaler) for TIM_SetIC3Prescaler
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TI4_Config) for TI4_Config
+    stm32f4xx_tim.o(i.TIM_ICInit) refers to stm32f4xx_tim.o(i.TIM_SetIC4Prescaler) for TIM_SetIC4Prescaler
+    stm32f4xx_tim.o(i.TIM_ITRxExternalClockConfig) refers to stm32f4xx_tim.o(i.TIM_SelectInputTrigger) for TIM_SelectInputTrigger
+    stm32f4xx_tim.o(i.TIM_PWMIConfig) refers to stm32f4xx_tim.o(i.TI1_Config) for TI1_Config
+    stm32f4xx_tim.o(i.TIM_PWMIConfig) refers to stm32f4xx_tim.o(i.TIM_SetIC1Prescaler) for TIM_SetIC1Prescaler
+    stm32f4xx_tim.o(i.TIM_PWMIConfig) refers to stm32f4xx_tim.o(i.TI2_Config) for TI2_Config
+    stm32f4xx_tim.o(i.TIM_PWMIConfig) refers to stm32f4xx_tim.o(i.TIM_SetIC2Prescaler) for TIM_SetIC2Prescaler
+    stm32f4xx_tim.o(i.TIM_TIxExternalClockConfig) refers to stm32f4xx_tim.o(i.TI2_Config) for TI2_Config
+    stm32f4xx_tim.o(i.TIM_TIxExternalClockConfig) refers to stm32f4xx_tim.o(i.TI1_Config) for TI1_Config
+    stm32f4xx_tim.o(i.TIM_TIxExternalClockConfig) refers to stm32f4xx_tim.o(i.TIM_SelectInputTrigger) for TIM_SelectInputTrigger
+    stm32f4xx_usart.o(i.USART_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f4xx_usart.o(i.USART_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f4xx_usart.o(i.USART_Init) refers to stm32f4xx_rcc.o(i.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    stm32f4xx_wwdg.o(i.WWDG_DeInit) refers to stm32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    startup_stm32f429_439xx.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f429_439xx.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f429_439xx.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f429_439xx.o(RESET) refers to startup_stm32f429_439xx.o(STACK) for __initial_sp
+    startup_stm32f429_439xx.o(RESET) refers to startup_stm32f429_439xx.o(.text) for Reset_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.NMI_Handler) for NMI_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.HardFault_Handler) for HardFault_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.MemManage_Handler) for MemManage_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.BusFault_Handler) for BusFault_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.SVC_Handler) for SVC_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.PendSV_Handler) for PendSV_Handler
+    startup_stm32f429_439xx.o(RESET) refers to stm32f4xx_it.o(i.SysTick_Handler) for SysTick_Handler
+    startup_stm32f429_439xx.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f429_439xx.o(.text) refers to system_stm32f4xx.o(i.SystemInit) for SystemInit
+    startup_stm32f429_439xx.o(.text) refers to __main.o(!!!main) for __main
+    startup_stm32f429_439xx.o(.text) refers to startup_stm32f429_439xx.o(HEAP) for Heap_Mem
+    startup_stm32f429_439xx.o(.text) refers to startup_stm32f429_439xx.o(STACK) for Stack_Mem
+    main.o(i.main) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    main.o(i.main) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_Init) for LCD_Init
+    main.o(i.main) refers to stm32f4xx_ltdc.o(i.LTDC_LayerCmd) for LTDC_LayerCmd
+    main.o(i.main) refers to stm32f4xx_ltdc.o(i.LTDC_ReloadConfig) for LTDC_ReloadConfig
+    main.o(i.main) refers to stm32f4xx_ltdc.o(i.LTDC_Cmd) for LTDC_Cmd
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_LayerInit) for LCD_LayerInit
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_DisplayOn) for LCD_DisplayOn
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_SetLayer) for LCD_SetLayer
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_Clear) for LCD_Clear
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_SetBackColor) for LCD_SetBackColor
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_SetTextColor) for LCD_SetTextColor
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_SetFont) for LCD_SetFont
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_GetFont) for LCD_GetFont
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_DisplayStringLine) for LCD_DisplayStringLine
+    main.o(i.main) refers to stm32f429i_discovery_ioe.o(i.IOE_Config) for IOE_Config
+    main.o(i.main) refers to noretval__2printf.o(.text) for __2printf
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(i.LCD_DrawRect) for LCD_DrawRect
+    main.o(i.main) refers to stm32f429i_discovery_ioe.o(i.IOE_TP_GetState) for IOE_TP_GetState
+    main.o(i.main) refers to main.o(.data) for GPIO_InitStructure
+    main.o(i.main) refers to init_gpio.o(.data) for GPIO_InitStructure
+    main.o(i.main) refers to stm32f429i_discovery_lcd.o(.data) for Font12x12
+    main.o(i.main) refers to lcd_tft.o(.data) for Linea
+    stm32f4xx_it.o(i.SysTick_Handler) refers to stm32f4xx_it.o(.data) for msTicks
+    system_stm32f4xx.o(i.SystemCoreClockUpdate) refers to system_stm32f4xx.o(.data) for SystemCoreClock
+    system_stm32f4xx.o(i.SystemCoreClockUpdate) refers to system_stm32f4xx.o(.constdata) for AHBPrescTable
+    system_stm32f4xx.o(i.SystemInit) refers to system_stm32f4xx.o(i.SetSysClock) for SetSysClock
+    redirect.o(.rev16_text) refers (Special) to use_no_semi.o(.text) for __use_no_semihosting_swi
+    redirect.o(.revsh_text) refers (Special) to use_no_semi.o(.text) for __use_no_semihosting_swi
+    redirect.o(.rrx_text) refers (Special) to use_no_semi.o(.text) for __use_no_semihosting_swi
+    redirect.o(i._sys_exit) refers (Special) to use_no_semi.o(.text) for __use_no_semihosting_swi
+    redirect.o(i.fputc) refers (Special) to use_no_semi.o(.text) for __use_no_semihosting_swi
+    redirect.o(i.fputc) refers to lcd_tft.o(i.Enviar_Mensaje) for Enviar_Mensaje
+    redirect.o(.data) refers (Special) to use_no_semi.o(.text) for __use_no_semihosting_swi
+    lcd_tft.o(i.Enviar_Mensaje) refers to stm32f429i_discovery_lcd.o(i.LCD_GetFont) for LCD_GetFont
+    lcd_tft.o(i.Enviar_Mensaje) refers to stm32f429i_discovery_lcd.o(i.LCD_DisplayStringLine) for LCD_DisplayStringLine
+    lcd_tft.o(i.Enviar_Mensaje) refers to lcd_tft.o(.bss) for LCD_String
+    lcd_tft.o(i.Enviar_Mensaje) refers to lcd_tft.o(.data) for i
+    init_gpio.o(i.Init_GPIO) refers to stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd) for RCC_AHB1PeriphClockCmd
+    init_gpio.o(i.Init_GPIO) refers to stm32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    init_gpio.o(i.Init_GPIO) refers to main.o(.data) for GPIO_InitStructure
+    init_gpio.o(i.Init_GPIO) refers to init_gpio.o(.data) for GPIO_InitStructure
+    __2printf.o(.text) refers to _printf_char_file.o(.text) for _printf_char_file
+    __2printf.o(.text) refers to redirect.o(.data) for __stdout
+    noretval__2printf.o(.text) refers to _printf_char_file.o(.text) for _printf_char_file
+    noretval__2printf.o(.text) refers to redirect.o(.data) for __stdout
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    _printf_char_file.o(.text) refers to _printf_char_common.o(.text) for _printf_char_common
+    _printf_char_file.o(.text) refers to ferror.o(.text) for ferror
+    _printf_char_file.o(.text) refers to redirect.o(i.fputc) for fputc
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    _printf_char_common.o(.text) refers to __printf_nopercent.o(.text) for __printf
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_stm32f429_439xx.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$00000001) refers to fpinit.o(x$fpl$fpinit) for _fp_init
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to redirect.o(i._sys_exit) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_fini_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000009) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000011) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000012) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000006) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to redirect.o(i._sys_exit) for _sys_exit
+    defsig_exit.o(.text) refers to redirect.o(i._sys_exit) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
